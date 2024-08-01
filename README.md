@@ -1,4 +1,4 @@
-mqtt_to_db.py
+mosquitto_modbus.py
 -------------
 This code reads data from a Modbus server and publishes it to an MQTT broker using Mosquitto client. 
 It continuously connects to the Modbus server, reads a specific register, and sends the data to an MQTT topic.
