@@ -11,3 +11,9 @@ mqtt_to_db.py
 This Python script connects to an MQTT broker, subscribes to the topic "2023/test", and saves incoming messages to an SQLite database.
 It ensures the database directory exists, creates a messages table if it doesn't exist, and handles incoming messages by printing and storing them. 
 The script maintains the MQTT connection and gracefully closes the database connection upon termination.
+
+read_db.py
+-----------
+This Python script continuously reads and displays new rows from an SQLite database table. 
+It initially prints all existing rows and then checks for new rows every second, printing them as they are found. 
+The database connection is handled in a separate thread, and the main program runs indefinitely until interrupted by the user, at which point it gracefully shuts down.
